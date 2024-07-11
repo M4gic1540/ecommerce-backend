@@ -88,7 +88,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://ecommerce-frontend-production-29a0.up.railway.app/',  # URL de tu frontend
+    'ecommerce-frontend-production-29a0.up.railway.app/',  # URL de tu frontend
 ]
 
 
