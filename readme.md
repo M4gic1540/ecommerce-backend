@@ -38,26 +38,7 @@ source venv/bin/activate # para Linux
 
 4. Configura la base de datos
 
-Asegúrate de tener una base de datos MySQL configurada de  lo contrario Utiliza SQlite3 para desplegar localmente
-
-Configuracion para Base de datos Predeterminada (Sqlite3)
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-
-de lo contrario si tienes una base de datos lista, crea un archivo .env en el directorio raíz del proyecto y agrega las siguientes variables de entorno:
-
-DATABASE_NAME=tu_nombre_de_base_de_datos
-DATABASE_USER=tu_usuario
-DATABASE_PASSWORD=tu_contraseña
-DATABASE_HOST=localhost
-DATABASE_PORT=3306
-SECRET_KEY=tu_clave_secreta
-DEBUG=True
+Utiliza SQlite3 para desplegar localmente
 
 5. Realiza las migraciones de la base de datos
 
