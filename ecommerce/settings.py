@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-lq+!3mf9813=4v@kdt3=3$4$$tgx@!nd$&1(u$w3+su*6o9w-d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ecommerce-backend-production-17ee.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -88,7 +88,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # URL de tu frontend
+    'https://ecommerce-frontend-production-29a0.up.railway.app/',  # URL de tu frontend
 ]
 
 
