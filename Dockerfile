@@ -20,11 +20,6 @@ RUN . /opt/venv/bin/activate
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Realiza las migraciones y recopila archivos estáticos
-RUN pip install mysqlclient
-RUN python manage.py makemigrations
-RUN python manage.py migrate
-RUN python manage.py collectstatic --noinput
 
 # Exponer el puerto en el que la aplicación estará ejecutándose
 EXPOSE 8000
