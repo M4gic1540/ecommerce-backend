@@ -1,1 +1,1 @@
-web: pip install mysqlclient && python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic --noinput && gunicorn negocio_usuarios.wsgi --log-file -
+web: gunicorn ecommerce.wsgi:application --bind 0.0.0.0:8000
